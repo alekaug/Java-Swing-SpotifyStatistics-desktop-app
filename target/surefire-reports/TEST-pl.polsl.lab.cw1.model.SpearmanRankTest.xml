@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="pl.polsl.lab.cw1.model.SpearmanRankTest" time="0.07" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="pl.polsl.lab.cw1.model.SpearmanRankTest" time="0.081" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1250"/>
-    <property name="java.class.path" value="C:\Users\narxyz\Documents\NetBeansProjects\Augustyniak.Aleksander.cw1\target\test-classes;C:\Users\narxyz\Documents\NetBeansProjects\Augustyniak.Aleksander.cw1\target\classes;C:\Users\narxyz\.m2\repository\com\opencsv\opencsv\5.3\opencsv-5.3.jar;C:\Users\narxyz\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\narxyz\.m2\repository\org\apache\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\narxyz\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\narxyz\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\narxyz\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\narxyz\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\narxyz\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\narxyz\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\narxyz\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\narxyz\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\narxyz\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\narxyz\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\narxyz\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
+    <property name="java.class.path" value="C:\Users\narxyz\Documents\NetBeansProjects\SpotifyStatistics\target\test-classes;C:\Users\narxyz\Documents\NetBeansProjects\SpotifyStatistics\target\classes;C:\Users\narxyz\.m2\repository\org\apache\commons\commons-csv\1.4\commons-csv-1.4.jar;C:\Users\narxyz\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\narxyz\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\narxyz\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\narxyz\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\narxyz\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\narxyz\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\narxyz\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,10 +15,9 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\narxyz\AppData\Local\Temp\surefire15088380225823984917\surefirebooter5358840990516963982.jar C:\Users\narxyz\AppData\Local\Temp\surefire15088380225823984917 2022-10-17T14-27-56_438-jvmRun1 surefire6683764290087716401tmp surefire_09832491781757387575tmp"/>
+    <property name="sun.java.command" value="C:\Users\narxyz\AppData\Local\Temp\surefire1478240727210774628\surefirebooter9355927698259411482.jar C:\Users\narxyz\AppData\Local\Temp\surefire1478240727210774628 2022-10-23T15-33-01_848-jvmRun1 surefire15111429905373520465tmp surefire_03508885514248153290tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="pl.polsl.lab.cw1.model.SpearmanRankTest#testPositiveCorrelationSpearmanRank"/>
-    <property name="surefire.test.class.path" value="C:\Users\narxyz\Documents\NetBeansProjects\Augustyniak.Aleksander.cw1\target\test-classes;C:\Users\narxyz\Documents\NetBeansProjects\Augustyniak.Aleksander.cw1\target\classes;C:\Users\narxyz\.m2\repository\com\opencsv\opencsv\5.3\opencsv-5.3.jar;C:\Users\narxyz\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\narxyz\.m2\repository\org\apache\commons\commons-text\1.9\commons-text-1.9.jar;C:\Users\narxyz\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\narxyz\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\narxyz\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\narxyz\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\narxyz\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\narxyz\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\narxyz\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\narxyz\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\narxyz\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\narxyz\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\narxyz\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\narxyz\Documents\NetBeansProjects\SpotifyStatistics\target\test-classes;C:\Users\narxyz\Documents\NetBeansProjects\SpotifyStatistics\target\classes;C:\Users\narxyz\.m2\repository\org\apache\commons\commons-csv\1.4\commons-csv-1.4.jar;C:\Users\narxyz\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\narxyz\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\narxyz\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\narxyz\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\narxyz\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\narxyz\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\narxyz\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\narxyz"/>
     <property name="user.language" value="en"/>
@@ -26,12 +25,12 @@
     <property name="java.version.date" value="2021-10-19"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-17.0.1"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\narxyz\Documents\NetBeansProjects\Augustyniak.Aleksander.cw1"/>
+    <property name="basedir" value="C:\Users\narxyz\Documents\NetBeansProjects\SpotifyStatistics"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\narxyz\AppData\Local\Temp\surefire15088380225823984917\surefirebooter5358840990516963982.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\narxyz\AppData\Local\Temp\surefire1478240727210774628\surefirebooter9355927698259411482.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.1+12-LTS-39"/>
@@ -46,7 +45,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\narxyz\AppData\Local\Temp\"/>
     <property name="java.version" value="17.0.1"/>
-    <property name="user.dir" value="C:\Users\narxyz\Documents\NetBeansProjects\Augustyniak.Aleksander.cw1"/>
+    <property name="user.dir" value="C:\Users\narxyz\Documents\NetBeansProjects\SpotifyStatistics"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
@@ -58,5 +57,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testPositiveCorrelationSpearmanRank" classname="pl.polsl.lab.cw1.model.SpearmanRankTest" time="0.039"/>
+  <testcase name="testPositiveCorrelationSpearmanRank" classname="pl.polsl.lab.cw1.model.SpearmanRankTest" time="0.043"/>
+  <testcase name="testInversedCorrelationSpearmanRank" classname="pl.polsl.lab.cw1.model.SpearmanRankTest" time="0.003"/>
 </testsuite>

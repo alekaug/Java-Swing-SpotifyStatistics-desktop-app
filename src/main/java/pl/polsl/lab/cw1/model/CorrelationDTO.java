@@ -1,12 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package pl.polsl.lab.cw1.model;
 
 /**
  *
- * @author narxyz
+ * @author Aleksander Augustyniak
  */
 public class CorrelationDTO {
     private String firstFeatureName;

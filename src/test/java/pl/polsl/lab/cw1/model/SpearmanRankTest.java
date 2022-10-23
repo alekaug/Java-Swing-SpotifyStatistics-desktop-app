@@ -57,9 +57,8 @@ public class SpearmanRankTest {
     public void testInversedCorrelationSpearmanRank() {
         Long[] x = new Long[]{1L, 2L, 3L, 4L, 5L};
         Long[] y = new Long[]{5L, 4L, 3L, 2L, 1L};
-        SpearmanRank instance = new SpearmanRank();
         Double expResult = -1.0;
-        Double result = instance.SpearmanRank(x, y);
+        Double result = SpearmanCorrelation.of(x, y);
         assertEquals(expResult, result);
     }
     
@@ -68,9 +67,8 @@ public class SpearmanRankTest {
     public void testPositiveCorrelationSpearmanRank() {
         Long[] x = new Long[]{1L, 2L, 3L, 4L, 5L};
         Long[] y = new Long[]{1L, 2L, 3L, 4L, 5L};
-        SpearmanRank instance = new SpearmanRank();
         Double expResult = 1.0;
-        Double result = instance.SpearmanRank(x, y);
+        Double result = SpearmanCorrelation.of(x, y);
         assertEquals(expResult, result);
     }
 }

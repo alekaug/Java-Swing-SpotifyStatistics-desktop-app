@@ -87,7 +87,7 @@ import java.util.Map.Entry;
 //    }
 //}
 
-public class SpearmanCorrelation {
+public abstract class SpearmanCorrelation {
     private static final String X_COLUMN = "x_i";
     private static final String Y_COLUMN = "y_i";
     private static final String X_COEFFICIENT = "r_x";

@@ -1,0 +1,16 @@
+pl\polsl\lab\cw1\constants\GlobalConstants.class
+pl\polsl\lab\cw1\controller\MainFrameController$1.class
+pl\polsl\lab\cw1\model\SpearmanCorrelation.class
+pl\polsl\lab\cw1\view\MainFrameView$1.class
+pl\polsl\lab\cw1\controller\MainFrameController.class
+pl\polsl\lab\cw1\model\MainFrameModel.class
+pl\polsl\lab\cw1\model\ModelOld.class
+pl\polsl\lab\cw1\view\MainFrameView$1JPanelElement.class
+pl\polsl\lab\cw1\view\PodiumView.class
+pl\polsl\lab\cw1\view\MainFrameView.class
+pl\polsl\lab\cw1\controller\MainFrameController$1$1.class
+pl\polsl\lab\cw1\model\RecordDTO.class
+pl\polsl\lab\cw1\Main.class
+pl\polsl\lab\cw1\model\CorrelationDTO.class
+pl\polsl\lab\cw1\model\SpearmanCorrelation$1.class
+pl\polsl\lab\cw1\model\TableParser.class
