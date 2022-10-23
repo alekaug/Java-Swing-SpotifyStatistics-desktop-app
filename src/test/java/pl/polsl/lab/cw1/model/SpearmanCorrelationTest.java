@@ -12,9 +12,9 @@ import org.junit.jupiter.api.Order;
  *
  * @author Aleksander Augustyniak
  */
-public class SpearmanRankTest {
+public class SpearmanCorrelationTest {
     
-    public SpearmanRankTest() {
+    public SpearmanCorrelationTest() {
     }
 
     @org.junit.jupiter.api.BeforeAll

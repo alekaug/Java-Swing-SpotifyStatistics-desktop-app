@@ -13,7 +13,7 @@ public class RecordDTO {
     private Long featStreams;
     private Long tracks;
     private Long oneBillion;
-    private Long oneMillion;
+    private Long hundredMillion;
     private Date lastUpdated;
     
     public RecordDTO() {}
@@ -79,11 +79,11 @@ public class RecordDTO {
     }
 
     public long getOneMillion() {
-        return oneMillion;
+        return hundredMillion;
     }
 
     public void setOneMillion(Long oneMillion) {
-        this.oneMillion = oneMillion;
+        this.hundredMillion = oneMillion;
     }
 
     public Date getLastUpdated() {
