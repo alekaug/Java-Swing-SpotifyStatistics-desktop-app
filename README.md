@@ -13,7 +13,7 @@ The project assigns listeners' continents, where they reside randomly.
 ## Spearman's Rank Correlation Coefficient
 
 The project uses the following formula:
-$$ r_s= \frac{12}{n(n^2-1)} \sum_{i=1}^{n} R_{x_i}R_{y_i} - \frac{3(n+1)}{n-1} $$
+$$r_s= \frac{12}{n(n^2-1)} \sum_{i=1}^{n} R_{x_i}R_{y_i} - \frac{3(n+1)}{n-1}$$
 Where:
-$$ r_s \in [-1, 1] $$
-It is being used, when features' values are repeatable. 
+$$r_s \in [-1, 1]$$
+The equation is being used, when features' values are repeatable. 
