@@ -3,7 +3,7 @@ package pl.polsl.lab.cw1.model;
 import java.util.Date;
 
 /**
- *
+ * 
  * @author Aleksander Augustyniak
  */
 public class RecordDTO {

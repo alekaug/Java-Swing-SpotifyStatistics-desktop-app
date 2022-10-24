@@ -1,19 +1,18 @@
 package pl.polsl.lab.cw1.model;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Order;
 
 /**
- *
+ * Test class of Spearman's rank correlation coefficient calculation
+ * correctness.
+ * 
  * @author Aleksander Augustyniak
+ * @version 1.0
  */
 public class SpearmanCorrelationTest {
-    
+
     public SpearmanCorrelationTest() {
     }
 
@@ -32,7 +31,7 @@ public class SpearmanCorrelationTest {
     @org.junit.jupiter.api.AfterEach
     public void tearDown() throws Exception {
     }
-    
+
 //    @BeforeAll
 //    public static void setUpClass() {
 //    }
@@ -48,7 +47,6 @@ public class SpearmanCorrelationTest {
 //    @AfterEach
 //    public void tearDown() {
 //    }
-
     /**
      * Test of SpearmanRank method, of class SpearmanRank.
      */
@@ -61,7 +59,7 @@ public class SpearmanCorrelationTest {
         Double result = SpearmanCorrelation.of(x, y);
         assertEquals(expResult, result);
     }
-    
+
     @Test
     @Order(2)
     public void testPositiveCorrelationSpearmanRank() {
