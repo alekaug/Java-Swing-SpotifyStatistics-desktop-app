@@ -25,7 +25,7 @@ public interface GlobalConstants {
     Float FRAME_SCALE_FACTOR = 0.8f;
 
     String CSV_EXTENSION = ".csv";
-    String RESOURCES_PATH = "src/main/resources/";
+    String RESOURCES_PATH = "";
     String DATA_SOURCE_PATH = RESOURCES_PATH + "spotify_artist_data" + CSV_EXTENSION;
     String IMAGE_PATH = RESOURCES_PATH + "Spotify-statistics-logo-smaller.png";
 }

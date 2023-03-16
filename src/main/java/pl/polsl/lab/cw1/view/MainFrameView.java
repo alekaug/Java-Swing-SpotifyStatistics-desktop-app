@@ -12,23 +12,15 @@ import java.awt.GraphicsEnvironment;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Image;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JTable;
+import javax.swing.*;
+
 import static pl.polsl.lab.cw1.constants.GlobalConstants.*;
 import static java.awt.RenderingHints.*;
+
 import java.util.ArrayList;
 import java.util.List;
 import static java.lang.String.format;
-import javax.swing.BoxLayout;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextField;
-import javax.swing.SwingConstants;
-import javax.swing.UIManager;
-import javax.swing.UnsupportedLookAndFeelException;
+
 import pl.polsl.lab.cw1.model.CorrelationDTO;
 
 /**
@@ -41,26 +33,22 @@ import pl.polsl.lab.cw1.model.CorrelationDTO;
  */
 public class MainFrameView {
 
-    private JFrame mainFrame;                   // Main application frame.
-    private JFrame correlationsFrame;           // Correlations frame.
-    private JTable table;                       // Main frame's table.
-    private JPanel background;                  // Main frame's background.
-    private JPanel header;                      // Main frame's header.
-    private JPanel body;                        // Main frame's body.
-    private JPanel footer;                      // Main frame's footer.
-    private JButton generateButton;             // Visible under table.
-    private List<List<JLabel>> correlationView; // List of correlation elements.
+    private JFrame mainFrame;                                                   // Main application frame.
+    private JFrame correlationsFrame;                                           // Correlations frame.
+    private JTable table;                                                       // Main frame's table.
+    private JButton generateButton = new JButton("Generate Correlations"); // Visible under table.
+    private List<List<JLabel>> correlationView;                                 // List of correlation elements.
     /**
      * Colors' coefficients range array
      */
     private static final Color[] colors = new Color[]{
-        new Color(0, 153, 0),
-        new Color(0, 204, 0),
+        new Color(0, 193, 0),
+        new Color(40, 174, 0),
         new Color(102, 153, 0),
-        new Color(153, 204, 0),
+        new Color(153, 164, 0),
         new Color(204, 204, 0),
         new Color(255, 255, 0),
-        new Color(255, 204, 0),
+        new Color(235, 180, 0),
         new Color(255, 153, 0),
         new Color(255, 102, 0),
         new Color(255, 0, 0)
@@ -89,10 +77,14 @@ public class MainFrameView {
     private void initialize() throws UnsupportedLookAndFeelException, ClassNotFoundException, InstantiationException, IllegalAccessException {
         mainFrame = initializeMainFrame();
         correlationsFrame = initializeCorrelationsFrame();
-        header = initializeHeader();
-        body = initializeBody();
-        footer = initializeFooter();
-        background = initializeBackground();
+        // Main frame's header.
+        JPanel header = initializeHeader();
+        // Main frame's body.
+        JPanel body = initializeBody();
+        // Main frame's footer.
+        JPanel footer = initializeFooter();
+        // Main frame's background.
+        JPanel background = initializeBackground();
         table = initializeTable();
 
         Container pane = mainFrame.getContentPane();
@@ -115,6 +107,8 @@ public class MainFrameView {
         gbc.gridwidth = 1;
         background.add(body, gbc);
         JTextField searchBar = new JTextField(40);
+        // Functionality not provided
+        searchBar.setEnabled(false);
         gbc.gridx = 0;
         gbc.gridy = 0;
         gbc.gridheight = 1;
@@ -140,7 +134,6 @@ public class MainFrameView {
         gbc.gridwidth = 1;
         background.add(footer, gbc);
 
-//        frame.pack();
         mainFrame.setSize(new Dimension((int) (getEfficientWidth() * FRAME_SCALE_FACTOR), (int) (getEfficientHeight() * (FRAME_SCALE_FACTOR + 0.05))));
         mainFrame.setLocationRelativeTo(null);
         mainFrame.setVisible(true);
@@ -151,7 +144,7 @@ public class MainFrameView {
      * @return Table with records.
      */
     private JTable initializeTable() {
-        JTable table = new JTable();
+        table = new JTable();
         table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
         table.getTableHeader().setResizingAllowed(false);
         table.setCellSelectionEnabled(false);
@@ -172,7 +165,7 @@ public class MainFrameView {
         UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         JFrame frame = new JFrame(APPLICATION_WINDOW_TITLE);
         frame.getContentPane().setLayout(new BorderLayout());
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setMinimumSize(new Dimension((int) (getEfficientWidth() * FRAME_SCALE_FACTOR), (int) (getEfficientHeight() * FRAME_SCALE_FACTOR)));
         frame.setIconImage(new ImageIcon(IMAGE_PATH).getImage());
         return frame;
@@ -186,7 +179,7 @@ public class MainFrameView {
         JFrame frame = new JFrame(CORRELATIONS_WINDOW_TITLE);
         frame.getContentPane().setLayout(new BoxLayout(frame.getContentPane(), BoxLayout.PAGE_AXIS));
 
-        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         frame.setIconImage(new ImageIcon(IMAGE_PATH).getImage());
         frame.setVisible(false);
         frame.setResizable(false);
@@ -195,8 +188,6 @@ public class MainFrameView {
 
     /**
      * Correlation frame content setter using known field in class.
-     *
-     * @see correlationView
      */
     private void setCorrelationsFrameContent() {
         class JPanelElement extends JPanel {
@@ -253,7 +244,6 @@ public class MainFrameView {
     }
 
     private JButton initializeGenerateButton() {
-        JButton generateButton = new JButton("Generate Correlations");
         generateButton.setEnabled(false);
         return generateButton;
     }
@@ -261,13 +251,25 @@ public class MainFrameView {
     private JPanel initializeHeader() {
         JPanel header = new JPanel(new FlowLayout(FlowLayout.CENTER, 10, 10));
         header.setBackground(new Color(0, 0, 0, 0));
-        ImageIcon imageIcon = new ImageIcon(IMAGE_PATH);
-        Image img = imageIcon.getImage();
-        Image newimg = img.getScaledInstance(80, 80, Image.SCALE_SMOOTH);
-        imageIcon = new ImageIcon(newimg);
+        ImageIcon imageIcon = getIcon(IMAGE_PATH);
         JLabel applicationNameText = new JLabel("<html><font family=Arial color=black size=20>Spotify Statistics</html>", imageIcon, SwingConstants.LEFT);
         header.add(applicationNameText);
         return header;
+    }
+
+    /**
+     * Helper method for icon conversion from image path.
+     *
+     * @param path Path to the image.
+     * @return Swing's image icon component.
+     */
+    private ImageIcon getIcon(String path) {
+        ImageIcon icon = null;
+        try {
+            icon = new ImageIcon(getClass().getResource("/" + path));
+            icon = new ImageIcon(icon.getImage().getScaledInstance(80, 80, Image.SCALE_SMOOTH));
+        } catch (Exception e) { /* return empty icon */ }
+        return icon;
     }
 
     /**
