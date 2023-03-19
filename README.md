@@ -14,8 +14,12 @@ The project uses the [Spearman's Rank Correlation Coefficient](#spearmans-rank-c
 
 
 ## How to use
-Simply, perform a drag&drop operation of the *.csv* containing artists' data. The file structure is described in [CSV file structure](#csv-file-structure).
-After data is loaded, a button below the view area should be active and after clicking it you are able to see the effect.
+Simply, perform a drag&drop operation of the *.csv* file containing artists' data. The file structure is described in [CSV file structure](#csv-file-structure).
+![spotify-statistics_how-to-use1](https://user-images.githubusercontent.com/56155903/226190443-61e94222-6a57-428a-8768-8c19233b93e6.gif)
+
+After data is loaded, the **Generate Correlations** button below the view area should be active. After clicking it you are able to see the effects.
+![spotify-statistics_how-to-use2](https://user-images.githubusercontent.com/56155903/226190840-9561515b-bdb7-4ea0-bbc0-404afb224bc1.gif)
+
 
 ### CSV file structure
 The table below represents an example of the *.csv* file to be imported into the application. It is available in the repository.
